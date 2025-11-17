@@ -124,20 +124,16 @@ public class App {
                 case 0:
                     break;
                 case 1:
-                    try {
                         System.out.println("masukkan angka: ");
                         int number = sc.nextInt();
                         numberList.add(number);
-                        if (numberList == 0) {
-                            
-                        }
-
-                    } catch (EmptyListException e) {
-                        // TODO: handle exception
-                    }
                     break;
                 case 3:
-                    System.out.println(numberList.getMax());
+                    try {
+                        System.out.println(numberList.getMax());
+                    } catch (Exception e) {
+                        // TODO: handle exception
+                    }
                     break;
                 case 4:
                     System.out.println(numberList.getMin());
